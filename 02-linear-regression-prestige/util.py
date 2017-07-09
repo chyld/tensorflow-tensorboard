@@ -7,6 +7,3 @@ def r2(y, y_hat):
 
 def closed_form(X, y):
     return np.linalg.inv(X.T @ X) @ (X.T @ y)
-
-def predict(X, weights, fn):
-    return fn(X, weights)
